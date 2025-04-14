@@ -24,10 +24,10 @@ function AllPost() {
 
                 {/* Footer Actions */}
                 <div className="flex justify-between text-xs sm:text-sm text-gray-500 mt-1 sm:mt-2 px-1 sm:px-2">
-                    <span>💬 12</span>
-                    <span>🔁 4</span>
+                    {/* <span>💬 12</span>
+                    <span>🔁 4</span> */}
                     <span>❤️ 23</span>
-                    <span>📤</span>
+                    {/* <span>📤</span> */}
                 </div>
             </div>
         </div>
