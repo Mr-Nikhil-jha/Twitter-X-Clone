@@ -26,7 +26,7 @@ function Navbar() {
         <div>
             {/* Mobile Hamburger Menu */}
             {isMobile && (
-                <div className="p-4 fixed top-2 left-2 z-50 bg-gray-800 rounded-md shadow-md">
+                <div className="p-4 fixed top-2 left-2 z-50 rounded-md shadow-md">
                     <MenuIcon className="text-white text-3xl cursor-pointer" onClick={() => setMenuHide(!menuHide)} />
                 </div>
             )}
@@ -34,7 +34,7 @@ function Navbar() {
             {/* Sidebar */}
             <aside
                 className={`transition-all duration-300 z-40 bg-gradient-to-b ml-2 from-gray-800 to-gray-700 shadow-lg rounded-2xl mt-4 h-screen w-64 p-6 flex flex-col items-center fixed ${
-                    isMobile ? (menuHide ? "-translate-x-full" : "translate-x-0") : "left-0"
+                    isMobile ? (menuHide ? "-translate-x-full hidden" : "translate-x-0") : "left-0"
                 }`}
             >
                 {/* Navigation Menu */}

@@ -6,6 +6,7 @@ function HomePage() {
         <div>
             <AllPost />
             <AllPost />
+            <AllPost />
         </div>
     );
 }

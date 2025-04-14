@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const newsData = [
     {
@@ -54,6 +54,16 @@ const newsData = [
 ];
 
 function RightAsidePage() {
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsDesktop(window.innerWidth > 768);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    if (!isDesktop) return null;
+
     return (
         <aside className="w-full md:w-80 h-screen p-4 bg-white shadow-lg rounded-lg sticky top-4">
             <h2 className="text-xl font-bold text-gray-800 mb-4">🚀 Tech News</h2>

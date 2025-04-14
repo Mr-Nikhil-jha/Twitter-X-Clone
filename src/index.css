@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@media screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .postCard {
+        width: 20rem;
+        margin-left: -2rem;
+    }
+}
